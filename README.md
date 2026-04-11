@@ -1,8 +1,6 @@
 # Atividade Prática: Sockets TCP — Cliente/Servidor Eco
 
-**Disciplina:** Computação Distribuída
-**Tempo estimado:** ~2 horas (atividade) + ~45 min (pré-atividade)
-**Pré-requisitos:**
+### Pré-requisitos:
 - Git instalado na máquina
 - Docker com o plugin Docker Compose instalado (`docker compose version` deve funcionar)
   - Docker Desktop (Mac/Windows/Linux) já inclui o Compose automaticamente

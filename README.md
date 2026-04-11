@@ -1,9 +1,12 @@
 # Atividade Prática: Sockets TCP — Cliente/Servidor Eco
 
-**Disciplina:** Sistemas Distribuídos
-**Formato:** Sala de Aula Invertida — encontro presencial em duplas
-**Tempo estimado:** ~2 horas (presencial) + ~45 min (pré-aula)
-**Pré-requisito:** Docker instalado na máquina
+**Disciplina:** Computação Distribuída
+**Tempo estimado:** ~2 horas (atividade) + ~45 min (pré-atividade)
+**Pré-requisitos:**
+- Git instalado na máquina
+- Docker com o plugin Docker Compose instalado (`docker compose version` deve funcionar)
+  - Docker Desktop (Mac/Windows/Linux) já inclui o Compose automaticamente
+  - Docker Engine (Linux) requer instalação separada do plugin: veja a [documentação oficial](https://docs.docker.com/compose/install/linux/)
 
 ---
 
@@ -17,22 +20,14 @@ Ao final desta atividade você será capaz de:
 
 ---
 
-## Fase pré-aula (faça antes de vir para o encontro)
+## Fase pré-atividade (faça antes da parte prática)
 
 Estude **pelo menos dois** dos recursos abaixo (escolha os formatos que
 funcionam melhor para você):
 
-- **Vídeo (10 min):** busque "Python socket TCP tutorial" no YouTube —
-  procure um que mostre `bind`, `listen`, `accept` no servidor e
-  `connect` no cliente.
-- **Leitura:** documentação oficial Python —
-  [Howto: Socket Programming](https://docs.python.org/3/howto/sockets.html)
-  (seções 1 e 2).
-- **Slides/texto curto:** capítulo introdutório de sockets do material
-  disponibilizado pelo professor no Moodle.
-
-Depois responda o **quiz de verificação de leitura** disponível no Moodle
-(5 questões, ~10 min) **antes** da aula presencial.
+- **Vídeo (20 min):** [O que é um socket](https://www.youtube.com/watch?v=aV4p6f2MuJc)
+- **Leitura:** [documentação oficial Python — Howto: Programação de Soquetes](https://docs.python.org/pt-br/3.14/howto/sockets.html)
+- **Slides/texto curto:** [capítulo introdutório de sockets do material no Moodle.](https://presencial.moodle.ufsc.br/pluginfile.php/1900841/mod_resource/content/12/INE5418_05_sockets.pdf)
 
 ---
 
@@ -84,7 +79,7 @@ docker compose down
 ```
 
 **Ponto de atenção:** observe que o log do servidor e o log do cliente
-aparecem intercalados. Os dois processos rodam em contêineres separados,
+podem aparecer intercalados. Os dois processos rodam em contêineres separados,
 em paralelo, mas compartilham a mesma rede interna do Docker.
 
 ---
@@ -139,17 +134,7 @@ e submeta o link no Moodle com:
 
 **Prazo:** conforme combinado em aula.
 
----
-
-## Rubrica de avaliação
-
-| Critério | 0 | Parcial | Completo |
-|----------|---|---------|----------|
-| Execução (`docker compose up --build` funciona) | Não roda | Roda com erros menores | Roda corretamente |
-| Compreensão conceitual (respostas do relatório) | Em branco ou incorretas | Parcialmente corretas | Todas corretas e justificadas |
-| Extensão funcional (Nível 2 correto) | Não implementado | Implementado com falha | Funciona corretamente |
-
-Pontuação: Execução 0–2 pts · Conceitual 0–4 pts · Extensão 0–4 pts = **10 pts**.
+(Obs: A forma de entrega do relatório pode variar, dependendo do combinado em aula)
 
 ---
 

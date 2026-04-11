@@ -22,7 +22,7 @@ PORTA = 5000
 # Tamanho máximo (em bytes) de cada mensagem recebida.
 TAMANHO_BUFFER = 1024
 
-# Contador de mensagens recebidas (acumulado durante toda a execução)
+# Contador de mensagens recebidas 
 total_mensagens = 0
 
 
@@ -53,8 +53,7 @@ def iniciar_servidor():
 
         if dados:
             mensagem = dados.decode("utf-8")
-            total_mensagens += 1
-            log(f"[SERVIDOR] Mensagem #{total_mensagens} recebida: '{mensagem}'")
+            log(f"[SERVIDOR] Mensagem recebida: '{mensagem}'")
 
             # 6. Devolver a mensagem ao cliente (eco)
             resposta = mensagem
